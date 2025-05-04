@@ -7,6 +7,7 @@
     <meta name="Description" content="The BYU-Idaho mission statement">
     <title>BYU-I Mission Statement</title>
     <link rel="Stylesheet" href="style/style.css">
+    <script src="scripts/mission.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -14,6 +15,13 @@
             <h1>MISSION STATEMENT</h1>
             <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2>
             <hr>
+
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+
         </header>
 
         <main>
@@ -31,7 +39,7 @@
         </main>
 
         <footer>
-            <img src="images/byui-logo_blue.webp" alt="BYU-I Logo">
+            <img id="logo" src="images/byui-logo_blue.webp" alt="BYU-I Logo">
         </footer>
 
     </div>

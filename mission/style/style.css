@@ -65,3 +65,34 @@ footer img {
     margin-top: 20px;
     
 }
+
+label {
+    letter-spacing: normal;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark footer img {
+
+}
+
+body.dark hr {
+    border-color: white;
+}
+
+body.dark select {
+    background-color: #555;
+    color: white;
+}
+
+body.dark select option {
+    background-color: #444;
+    color:white;
+}
+
+body.dark h2 {
+    color: #66B3E2;
+}

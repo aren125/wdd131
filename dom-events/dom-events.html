@@ -9,8 +9,41 @@
     <script src="dom-events.js" defer></script>
     <!-- <link rel="Stylesheet" href="styles/dom-events.css"> this won't work because there is no
      css file set up. I'm getting in the practice of adding the meta tags to my HMTL -->
+     <style>
+        .todos {
+          width: 300px;
+        }
+        .todos > li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid;
+          padding: 0.5em;
+        }
+        .todos p {
+          margin: 0;
+        }
+        .todos span {
+          cursor: pointer;
+        }
+        .strike {
+          text-decoration: line-through;
+          color: gray;
+        }
+      </style>
 </head>
 <body>
+    <h1>ToDos</h1>
+
+    <section>
+      <label for="todo">Enter Task</label>
+      <input name="todo" id="todo" />
+      <button id="submitTask">Enter</button>
+    </section>
+
+    <ul id="todoList" class="todos"></ul>
+    
+    <script src="events.js"></script>
     
 </body>
 </html>

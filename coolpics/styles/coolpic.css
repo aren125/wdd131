@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 :root {
 --primary-color: #52489c;
@@ -30,6 +30,8 @@
     width: 250px;
     object-fit: cover;
     display: block;
+    border: 7px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
   }
 
 
@@ -44,19 +46,41 @@
   header h1 {
     margin-bottom: 0.5rem;
   }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1em;
+  }
   
-  .menu-btn {
+  #menu-button {
+    display: block;
+    margin: 0.5em 0;
     background: none;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2em;
     color: var(--text-light);
     cursor: pointer;
-    margin-bottom: 1rem;
+  }
+
+  #nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+  }
+  
+  #nav-menu a {
+    text-decoration: underline;
+    color: var(--text-light);
   }
   
   nav ul {
     list-style: none;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
@@ -64,6 +88,8 @@
   nav ul li a {
     color: var(--text-light);
     text-decoration: none;
+    font-size: 0.6em;
+    text-decoration: underline;
   }
 
   main {
@@ -79,17 +105,17 @@
   }
   
   .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 1em;
+    padding: 1em;
   }
 
 
   @media screen and (min-width: 700px) {
     .gallery {
+      display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -102,10 +128,14 @@
     nav ul {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
+      text-decoration: underline;
+      align-items: center;
+      padding: 0 1rem;
+
     }
   
-    .menu-btn {
+    .menu-button {
       display: none;
     }
   }

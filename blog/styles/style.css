@@ -1,0 +1,143 @@
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #001d4a;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Lora', serif;
+  margin: 0.5em 0;
+}
+
+h2 {
+    color: #27476e;
+}
+
+a {
+  color: #006992;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  text-align: center;
+  padding: 2em 1em 1em 1em;
+  background-color: white;
+  color: #001d4a;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    color: #001d4a;
+    margin: 0;
+}
+
+nav {
+  border-top: 3px solid #006992;
+  border-bottom: 3px solid #006992;
+  background-color: white;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+
+nav > ul {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: end;
+  list-style: none;
+  max-width: 600px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 1em;
+  gap: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #001d4a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #006992; 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2em;
+  padding: 2em;
+  background-color: #f5faff;
+  align-items: start; 
+}
+
+.book-filter {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: stretch;
+  height: 400px;
+  background-color: #e6eff7;
+  border-left: 4px solid #006992;
+  border-radius: 8px;
+  padding: 1em;
+  font-style: italic;
+}
+
+.book {
+  display: contents;
+}
+
+.book-details {
+  grid-column: 1;
+  padding: 1em;
+  background-color: #e6eff7;
+  border-left: 4px solid #006992;
+  border-radius: 8px;
+}
+
+.book-review {
+  grid-column: 2;
+  padding: 1em;
+  background-color: #ffffff;
+  border: 1px solid #ccd9e0;
+  border-radius: 8px;
+}
+
+.book-review img {
+  max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
+
+
+img {
+  display: block;
+  margin: 0 auto 1em;
+  width: 200px;
+  height: auto;
+}
+
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: green; 
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skiptocontent a:focus {
+  top: 0;
+}

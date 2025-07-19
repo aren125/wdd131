@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Hair by Bridget" />
+  <title>Contact | Hair by Bridget</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script src="bridget.js"></script>
+</head>
+<body class="contact-page">
+<div class="container">
+
+  <!-- NAVIGATION -->
+  <header>
+<nav>
+  <div class="logo">
+    <img src="images/logo-nobckgrnd.png" alt="Hair by Bridget Logo" />
+  </div>
+
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="contact-me.html" class="nav-link">Contact Me</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <!-- CONTACT MAIN -->
+  <main>
+    <section class="contact-split-container">
+
+      <!-- LEFT SIDE: Photo + Contact Info -->
+      <div class="contact-left">
+        <img src="images/bridgetabout.JPG" alt="Bridget Rentz smiling with her cats" class="bridget-photo" />
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p><strong>Email:</strong> bridget6rentz@gmail.com</p>
+          <p><strong>Phone:</strong> (919) 779-7530</p>
+          <p><strong>Location:</strong> Clinton, NC</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hair_by_bridge/" target="_blank" rel="noopener noreferrer">@hair_by_bridge</a></p>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Contact Form -->
+      <div class="contact-right">
+        <h1>Contact Me</h1>
+        <p class="contact-intro">Ready to schedule an appointment or ask a question? I'd love to hear from you!</p>
+
+        <form class="contact-form" action="mailto:bridget6rentz@gmail.com" method="POST" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Hair by Bridget. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/hair_by_bridge/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+          <img src="images/instagramlogo.png" alt="Instagram Icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -3,31 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hair by Bridget – Cut, Color, Style, and Sparkle!" />
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script src="bridget.js"></script>
+
+
+  <meta name="description" content="Hair by Bridget – Professional hairstyling services including cuts, color, highlights, and fairy hair. Let your beauty shine with personalized care!" />
+  <meta name="keywords" content="Hair stylist, Bridget, haircut, hair color, highlights, balayage, blowout, fairy hair, salon" />
+  <meta name="author" content="Audrey Rentz for Hair By Bridget" />
+
+  <meta property="og:title" content="Hair by Bridget" />
+  <meta property="og:description" content="Hair by Bridget – Professional hairstyling services including cuts, color, highlights, and fairy hair. Explore Hair by Bridget's professional hair services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="#" />
+  <meta property="og:image" content="#/images/hairservicescover" />
+  <link rel="icon" href="images/logo-black.png" type="image/logo" />
+
   <title>Hair by Bridget</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  
 </head>
-<body>
+<body class="container">
   <header>
-    <nav class="navbar">
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="contact.html" class="nav-link">Contact Me</a>
-      </div>
-      <div class="logo">
-        <img src="images/logo.JPG" alt="Hair by Bridget Logo" />
-      </div>
-    </nav>
+<nav>
+  <div class="logo">
+    <img src="images/logo-nobckgrnd.png" alt="Hair by Bridget Logo" />
+  </div>
+
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="contact-me.html" class="nav-link">Contact Me</a></li>
+  </ul>
+</nav>
   </header>
 
   <!-- Hero Banner Section -->
   <section class="hero-banner">
-    <img src="#" alt="Hair salon banner" class="banner-image" />
+    <img src="images/banner1.png" alt="Hair salon banner" class="banner-image" />
     <div class="banner-text">
       <h1>Hair by Bridget</h1>
-      <p>Book your next cut, color, style, or sparkle appointment today!</p>
-      <a href="contact.html" class="book-button">Book Now</a>
+      <p>Book your next hair, lash, or nail appointment today!</p>
+      <a href="contact-me.html" class="book-button">Book Now</a>
     </div>
   </section>
 
@@ -36,7 +54,7 @@
 <section class="about-me">
   <div class="about-content">
     <div class="about-text">
-      <h2>Welcome</h2>
+      <h2>Welcome!</h2>
       <p>
         Hi! I’m Bridget Rentz, a licensed cosmetologist who loves all things hair,
         beauty, and creativity. Whether you’re looking for a fresh cut, bold color,
@@ -46,7 +64,7 @@
       </p>
     </div>
     <div class="about-image-wrapper">
-      <img src="images/bridgetabout.JPG" alt="Bridget Rentz smiling in her salon" class="about-image" />
+      <img src="images/bridget-about-1.jpg" alt="Bridget Rentz smiling" class="about-image" />
     </div>
   </div>
 </section>
@@ -57,22 +75,22 @@
   <h2>Popular Services</h2>
   <div class="services-grid">
     <div class="service-card">
-      <img src="images/hair-services.jpg" alt="Hair coloring and styling" class="service-image" />
+      <img src="images/hairservicescover.jpg" alt="Hair coloring and styling" class="service-image" />
       <h3>Hair Services</h3>
       <p>Fresh cuts, dimensional color, styling, and sparkle with fairy hair.</p>
-      <a href="contact.html" class="book-link">Book Now</a>
+      <a href="contact-me.html" class="book-link">Book Now</a>
     </div>
     <div class="service-card">
-      <img src="images/nail-services.jpg" alt="Manicured hands with nail art" class="service-image" />
+      <img src="images/bluenailsoutside.jpg" alt="Manicured hands with nail art" class="service-image" />
       <h3>Nail Services</h3>
       <p>Manicures, gel polish, and nail art designed for your personal style.</p>
-      <a href="contact.html" class="book-link">Book Now</a>
+      <a href="contact-me.html" class="book-link">Book Now</a>
     </div>
     <div class="service-card">
-      <img src="images/lash-extensions.jpg" alt="Woman with long eyelash extensions" class="service-image" />
+      <img src="images/lashes.jpg" alt="Woman with eyelash extensions" class="service-image" />
       <h3>Lash Extensions</h3>
       <p>Natural to full-glam looks to enhance your lashes with confidence.</p>
-      <a href="contact.html" class="book-link">Book Now</a>
+      <a href="contact-me.html" class="book-link">Book Now</a>
     </div>
   </div>
 </section>
@@ -83,19 +101,12 @@
   <div class="footer-content">
     <p>&copy; 2025 Hair by Bridget. All rights reserved.</p>
     <div class="social-icons">
-      <a href="https://www.instagram.com/bridget" target="_blank" aria-label="Instagram">
-        <img src="images/icon-instagram.png" alt="Instagram Icon" />
-      </a>
-      <a href="https://www.facebook.com/bridget" target="_blank" aria-label="Facebook">
-        <img src="images/icon-facebook.png" alt="Facebook Icon" />
-      </a>
-      <a href="https://www.tiktok.com/@bridget" target="_blank" aria-label="TikTok">
-        <img src="images/icon-tiktok.png" alt="TikTok Icon" />
+      <a href="https://www.instagram.com/hair_by_bridge/" target="_blank" aria-label="Instagram">
+        <img src="images/instagramlogo.png" alt="Instagram Icon" />
       </a>
     </div>
   </div>
 </footer>
 
-  <script type="module" src="main.js"></script>
 </body>
 </html>

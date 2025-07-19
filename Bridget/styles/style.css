@@ -189,7 +189,7 @@ nav {
 .book-button {
   display: inline-block;
   margin-top: 1em;
-  background-color: var(--primary-green);
+  background-color: var(--button-hover);
   color: white;
   padding: 0.7em 1.5em;
   border-radius: 30px;
@@ -198,7 +198,7 @@ nav {
 }
 
 .book-button:hover {
-  background-color: var(--button-hover);
+  background-color: var(--button-green);
 }
 
 /* ===========================
@@ -257,7 +257,7 @@ nav {
 .book-link {
   display: inline-block;
   margin-top: 1em;
-  background-color: var(--primary-green);
+  background-color: var(--button-hover);
   color: white;
   padding: 0.5em 1em;
   border-radius: 25px;
@@ -266,7 +266,7 @@ nav {
 }
 
 .book-link:hover {
-  background-color: var(--button-hover);
+  background-color: var(--button-green);
 }
 
 /* ===========================
@@ -432,7 +432,6 @@ footer a {
   border-radius: 8px;
 }
 
-/* Container for each before/after pair */
 /* Before & After Section Title */
 .before-after > h2 {
   font-family: 'Playfair Display', serif;
@@ -483,9 +482,9 @@ footer a {
 
 .toggle-button {
   margin-top: 0.8em;
-  align-self: center; /* center button */
+  align-self: center;
   padding: 0.5em 1.2em;
-  background-color: var(--button-green);
+  background-color: var(--button-hover);
   color: white;
   border: none;
   border-radius: 25px;
@@ -497,7 +496,7 @@ footer a {
 }
 
 .toggle-button:hover {
-  background-color: var(--button-hover);
+  background-color: var(--button-green);
 }
 
 /* On larger screens */

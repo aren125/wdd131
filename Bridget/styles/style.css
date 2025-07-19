@@ -48,7 +48,6 @@ img {
   display: block;
 }
 
-/* NAVIGATION BAR */
 header {
   background-color: var(--primary-green); 
   padding: 1rem 0;
@@ -82,7 +81,7 @@ nav {
   color: var(--accent-green); 
 }
 
-/* Mobile Navigation Toggle (Hamburger) */
+
 .hamburger {
   display: block;
   background: none;
@@ -92,8 +91,7 @@ nav {
   cursor: pointer;
 }
 
-/* Hide nav links on mobile by default */
-/* Default (mobile first) */
+
 .nav-links {
   list-style: none;
   display: none;
@@ -111,14 +109,12 @@ nav {
   gap: 1em;
 }
 
-/* Show nav when active (mobile only) */
 .nav-links.active {
   display: flex;
 }
 
 
 
-/* Larger screens: horizontal nav */
 @media (min-width: 768px) {
   nav {
     flex-wrap: nowrap;
@@ -130,8 +126,8 @@ nav {
   }
 
   .nav-links {
-    display: flex !important; /* ensure it shows on larger screens */
-    position: static;         /* reset absolute positioning */
+    display: flex !important; 
+    position: static;         
     background-color: transparent;
     flex-direction: row;
     gap: 1.5rem;
@@ -145,13 +141,9 @@ nav {
   }
 
     .hamburger {
-    display: none; /* hide hamburger on desktop */
+    display: none; 
   }
 }
-
-/* ===========================
-   HERO SECTION
-   =========================== */
 
 .hero-banner {
   position: relative;
@@ -201,9 +193,6 @@ nav {
   background-color: var(--button-green);
 }
 
-/* ===========================
-   ABOUT SECTION
-   =========================== */
 
 .about-me {
   padding: 2em 1em;
@@ -221,9 +210,6 @@ nav {
   width: 100%;
 }
 
-/* ===========================
-   POPULAR SERVICES & SERVICES
-   =========================== */
 
 .popular-services,
 .services {
@@ -269,9 +255,6 @@ nav {
   background-color: var(--button-green);
 }
 
-/* ===========================
-   CONTACT PAGE
-   =========================== */
 
 .contact-split-container {
   display: flex;
@@ -319,10 +302,6 @@ nav {
 }
 
 
-/* ===========================
-   FOOTER
-   =========================== */
-
 footer {
   background-color: var(--primary-green);
   color: white;
@@ -348,9 +327,6 @@ footer a {
   border-radius: 50%;
 }
 
-/* ===========================
-   SERVICES PAGE SPECIFIC
-   =========================== */
 
 .services-page {
   font-family: 'lato', 'Roboto Condensed', sans-serif;
@@ -360,7 +336,22 @@ footer a {
   margin: 0 auto;
 }
 
-/* Services section */
+.service-search {
+  text-align: center;
+  padding: 2em 1em 1em;
+}
+
+#service-search {
+  padding: 0.75em 1em;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
 .services-page .services h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
@@ -370,7 +361,7 @@ footer a {
   text-align: center;
 }
 
-/* Service categories */
+
 .services-page .service-category {
   background-color: var(--accent-green);
   border-radius: 10px;
@@ -410,10 +401,6 @@ footer a {
 }
 
 
-/* ===========================
-   BEFORE & AFTER GALLERY
-   =========================== */
-
 .before-after-gallery {
   display: flex;
   flex-direction: column;  
@@ -432,7 +419,6 @@ footer a {
   border-radius: 8px;
 }
 
-/* Before & After Section Title */
 .before-after > h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
@@ -446,8 +432,8 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;  /* limit container width */
-  width: 90%;        /* responsive width on mobile */
+  max-width: 300px;  
+  width: 90%;        
 }
 
 .image-pair img {
@@ -466,12 +452,10 @@ footer a {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Show the currently active image */
 .image-pair img.active {
   display: block;
 }
 
-/* Toggle button styling */
 .toggle-image {
   width: 100%;
   max-height: 300px;
@@ -499,7 +483,6 @@ footer a {
   background-color: var(--button-green);
 }
 
-/* On larger screens */
 @media (min-width: 768px) {
   .image-pair {
     flex-direction: row;
@@ -508,7 +491,7 @@ footer a {
   }
 
   .image-container {
-    width: 300px;  /* fixed width for consistency */
+    width: 300px;  
   }
 
   .image-container img {
@@ -523,7 +506,6 @@ footer a {
 }
 
 
-/* Gallery Section */
 .services-page .gallery h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -533,7 +515,6 @@ footer a {
   text-align: center;
 }
 
-/* Updated Gallery grid styles */
 .services-page .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -550,19 +531,15 @@ footer a {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  min-width: 200px; /* prevent images from shrinking too small */
+  min-width: 200px; 
 }
 
 .services-page .gallery-grid img:hover {
   transform: scale(1.05);
 }
 
-/* ===========================
-   MEDIA QUERIES FOR LARGER SCREENS
-   =========================== */
 
 @media (min-width: 768px) {
-  /* About section content side-by-side */
   .about-content {
     flex-direction: row;
     justify-content: center;
@@ -573,14 +550,11 @@ footer a {
     width: 50%;
   }
 
-  /* Services, Gallery grids 3 columns */
   .services-grid,
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-  /* Contact page side-by-side form */
   .contact-split-container {
     flex-direction: row;
     justify-content: center;
@@ -590,7 +564,6 @@ footer a {
     width: 45%;
   }
 
-  /* Typography larger */
   body {
     font-size: 18px;
   }
@@ -611,7 +584,6 @@ footer a {
     width: auto;
   }
 
-  /* Services page before & after gallery images side by side */
   .services-page .before-after-gallery {
     flex-direction: row;
     flex-wrap: wrap;

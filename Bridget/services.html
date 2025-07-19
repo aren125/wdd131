@@ -7,18 +7,18 @@
   <link rel="stylesheet" href="styles/style.css">
   <meta name="description" content="Hair, nail, and lash services by Bridget – see service pricing, before & after transformations, and gallery." >
   <script src="bridget.js"></script>
+  <script src="services.js"></script>
 </head>
 
 <body class="services-page">
 
-  <!-- Navigation -->
   <header>
 <nav>
   <div class="logo">
     <img src="images/logo-nobckgrnd.png" alt="Hair by Bridget Logo" >
   </div>
 
-  <!-- Hamburger -->
+  
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
 
   <ul class="nav-links" id="nav-links">
@@ -30,41 +30,17 @@
   </header>
 
    <main>
-    <!-- Services Section -->
-    <section class="services">
+        <section class="service-search">
+        <input
+            type="text"
+            id="service-search"
+            placeholder="Search for a service..."
+            aria-label="Search services"
+        >
+        </section>
 
-      <div class="service-category">
-        <h2>Hair Services</h2>
-        <ul>
-          <li>Haircut (includes wash, blowout & style) – $65</li>
-          <li>All-Over Color – starting at $120</li>
-          <li>Highlights / Balayage – starting at $160</li>
-          <li>Blowout & Style – $55</li>
-          <li>Fairy Hair (per strand) – $5 <em>(Bundle pricing available)</em></li>
-        </ul>
-      </div>
+        <section class="services"></section>
 
-      <div class="service-category">
-        <h2>Nail Services</h2>
-        <ul>
-          <li>Gel Manicure – $55</li>
-          <li>Gel-X Full Set – $75</li>
-          <li>Nail Art – starting at $10+</li>
-        </ul>
-      </div>
-
-      <div class="service-category">
-        <h2>Lash Extensions</h2>
-        <ul>
-          <li>Classic Full Set – $130</li>
-          <li>Hybrid Full Set – $160</li>
-          <li>Volume Full Set – $180</li>
-          <li>Lash Fills – $70–$90 <em>(based on time between appointments)</em></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Before and After Section -->
     <section class="before-after">
       <h2>Before & After Transformations</h2>
 
@@ -105,7 +81,6 @@
     </section>
 
 
-    <!-- Gallery Section -->
     <section class="gallery">
       <h2>Gallery</h2>
       <div class="gallery-grid">
@@ -121,7 +96,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>
       <a href="https://www.instagram.com/hair_by_bridge/" target="_blank">Instagram</a> |

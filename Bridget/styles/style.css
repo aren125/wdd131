@@ -176,6 +176,14 @@ nav {
   margin-bottom: 1em;
   color: var(--primary-green);
   font-weight: 600;
+  display: none;
+  max-width: 375px;
+}
+
+@media (min-width: 768px) {
+  .banner-text p {
+    display: block;
+  }
 }
 
 .book-button {

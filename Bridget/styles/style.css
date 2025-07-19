@@ -257,7 +257,7 @@ nav {
 .book-link {
   display: inline-block;
   margin-top: 1em;
-  background-color: var(--button-green);
+  background-color: var(--primary-green);
   color: white;
   padding: 0.5em 1em;
   border-radius: 25px;
